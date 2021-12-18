@@ -1,13 +1,5 @@
-# from django.shortcuts import render
-
-
-# def index(request):
-#     return render(request, 'build/index.html')
-
 from django.shortcuts import render
-from django.views.generic.base import TemplateView
-# Create your views here.
 
 
-class LandingView(TemplateView):
-    template_name = "base/index.html"
+def index(request):
+    return render(request, 'build/index.html')
