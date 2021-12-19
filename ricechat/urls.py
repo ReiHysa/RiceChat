@@ -23,5 +23,5 @@ urlpatterns = [
     path('api/', include('user_accounts.urls')),
     path('api/messages/', include('message_content.urls')),
     path('api/chats/', include('chat.urls')),
-    re_path(r'^.*$', index)
+    re_path(r'^.*$', index, name="index")
 ]
