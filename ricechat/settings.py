@@ -61,8 +61,9 @@ MIDDLEWARE = [
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # Look, we have added the root folder of frontend here
-        'DIRS': '/Users/reislihysa/Desktop/Software Engineering/ga/projects/final_project/ricechat/client',
+        'DIRS': [os.path.join(BASE_DIR, 'client')
+                 ]  # Look, we have added the root folder of frontend here
+        ,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
