@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'message_content',
     'chat',
     'rest_framework',
-    'ricechat',
 ]
 
 MIDDLEWARE = [
@@ -62,7 +61,7 @@ MIDDLEWARE = [
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'ricechat/client')
+        'DIRS': [os.path.join(BASE_DIR, 'client')
                  ]  # Look, we have added the root folder of frontend here
         ,
         'APP_DIRS': True,
