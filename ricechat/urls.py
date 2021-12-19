@@ -19,9 +19,9 @@ from django.urls.conf import include
 from .views import index
 
 urlpatterns = [
-    path('', index),
     path('admin/', admin.site.urls),
     path('api/', include('user_accounts.urls')),
     path('api/messages/', include('message_content.urls')),
-    path('api/chats/', include('chat.urls'))
+    path('api/chats/', include('chat.urls')),
+    re_path(r'^.*$', index)
 ]
