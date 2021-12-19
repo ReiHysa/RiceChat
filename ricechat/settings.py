@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'message_content',
     'chat',
     'rest_framework',
+    'client',
 ]
 
 MIDDLEWARE = [
