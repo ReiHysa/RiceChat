@@ -139,7 +139,7 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_ALLOW_ALL = True
 
 
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'ricechat.urls'
 
 STATIC_URL = '/static/'
 
