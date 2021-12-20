@@ -148,9 +148,9 @@ export const getAxiosRequestConfig = (requestUrl, data, method = "post") => {
   const config = {
     method,
     url: `http://localhost:8000/api/${requestUrl}/`,
-    headers: {
-      "Content-Type": "application/json",
-    },
+    // headers: {
+    //   "Content-Type": "application/json",
+    // },
     data: data,
   };
   return config;
