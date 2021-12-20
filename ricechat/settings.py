@@ -146,6 +146,5 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ],
 }
-CORS_ORIGIN_ALLOW_ALL = True
 
 django_on_heroku.settings(locals())
