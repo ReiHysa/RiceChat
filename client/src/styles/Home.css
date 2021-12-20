@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@457&display=swap");
+* {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  list-style: none;
+}
+body {
+  background-color: rgb(10, 10, 10);
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e4996759-6e2a-41d1-bc8b-8d38cf9de843/d1nwdwd-d59173ab-6875-4780-97ff-56a49fc4060a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U0OTk2NzU5LTZlMmEtNDFkMS1iYzhiLThkMzhjZjlkZTg0M1wvZDFud2R3ZC1kNTkxNzNhYi02ODc1LTQ3ODAtOTdmZi01NmE0OWZjNDA2MGEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SJfmi-6kPwVypfpP1O4i6zfp9VFjQV5v376bbEMyRpU);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.chat-selector {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 100%;
+  width: 99%;
+}
+.containers-container {
+  width: 80%;
+  height: 100%;
+}
+.container {
+  border-bottom: 0.5px solid rgb(255, 255, 255);
+  border-top: 0.5px solid rgb(252, 252, 252);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  cursor: pointer;
+}
+.group-one {
+  display: flex;
+}
+.delete-chat {
+  z-index: 1;
+  padding-top: 3px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 70px;
+  left: 100%;
+}
+
+.delete-chat:hover {
+  background-color: red;
+  cursor: pointer;
+}
+#chat-list-names {
+  text-transform: capitalize;
+}
+
+.complete-container {
+  height: 80vh;
+  overflow-y: scroll;
+}
+header {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  height: 100px;
+  padding: 20px;
+}
+.search-container {
+  display: inline-flex;
+  flex-direction: column;
+  max-height: 100px;
+  overflow-y: scroll;
+}
+.logo {
+  width: 50%;
+  font-size: 25px;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+.searching-bar {
+  width: 82vw;
+  background-color: grey;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  height: 30px;
+}
+.search-results {
+  background-color: rgb(73, 73, 73);
+  width: 79vw;
+  position: relative;
+  left: 8px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.search-div {
+  display: flex;
+  justify-content: center;
+}

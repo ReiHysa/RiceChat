@@ -1,0 +1,115 @@
+.messageBox {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  max-width: 100%;
+  max-height: 80px;
+  display: flex;
+  justify-content: right;
+}
+.field {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.message-box-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 70px;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: #69b3c4;
+  border-radius: 20px;
+  padding: 20px;
+}
+.otherUser {
+  background-color: #4e4e4e;
+}
+.other {
+  justify-content: left;
+}
+.background {
+  padding: 20px;
+  height: 100vh;
+  overflow: scroll;
+  margin-bottom: 50px;
+}
+.message-form {
+  background-color: #98c4cd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.message-submit {
+  width: 80vw;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  height: 35px;
+}
+.back-button {
+  background-color: #d7f8ff;
+  padding: 10px;
+  border-radius: 10px;
+  position: fixed;
+}
+.back-button:hover {
+  cursor: pointer;
+}
+.holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+.submit-button {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #d7f8ff;
+  width: 100px;
+  border: 2px solid #98c4cd;
+  border-radius: 10px;
+}
+.submit-button:hover {
+  background-color: #a5e9f1;
+}
+.sub-hold {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.circle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  height: 70px;
+  background-color: #98c4cd;
+  border: 3px solid #85e4f7;
+  width: 70px;
+  border-radius: 50px;
+}
+#chat-list-names {
+  position: relative;
+  top: 10px;
+}
+
+.delete-box {
+  color: red;
+  position: relative;
+  left: 5px;
+  top: 10px;
+}
+.other-delete {
+  display: none;
+}
+.delete-box p:hover {
+  color: rgb(139, 4, 4);
+  cursor: pointer;
+}
