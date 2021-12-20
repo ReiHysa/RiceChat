@@ -62,7 +62,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'client')
-                 ],
+                 ]  # Look, we have added the root folder of frontend here
+        ,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,6 +77,14 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'ricechat.wsgi.application'
+
+ROOT_URLCONF = 'ricechat.urls'  # check if you have this already, if not add it in
+
+STATIC_URL = '/static/'  # same with this
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'client', "build", "static"),
+)
 
 
 # Database
@@ -136,14 +145,5 @@ REST_FRAMEWORK = {
     ],
 }
 CORS_ORIGIN_ALLOW_ALL = True
-
-
-ROOT_URLCONF = 'ricechat.urls'
-
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'client', "build", "static"),
-)
 
 django_on_heroku.settings(locals())
