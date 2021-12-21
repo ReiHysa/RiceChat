@@ -13,7 +13,6 @@ const UserChats = (chat) => {
 
   const deleteChat = (event) => {
     const chatId = Number(event.target.classList[0]);
-    console.log(chatId);
 
     const confirmation = confirm("You sure you want to delete this chat?");
 
