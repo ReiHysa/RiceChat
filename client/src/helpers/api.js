@@ -4,7 +4,7 @@ import { getToken } from "./auth";
 export const fetchAllUsers = async () => {
   const config = {
     method: "get",
-    url: `http://localhost:8000/api/`,
+    url: `https://rice-chat.herokuapp.com/api/`,
     headers: {
       "Content-Type": "application/json",
     },
@@ -16,7 +16,7 @@ export const fetchAllUsers = async () => {
 export const deleteMessage = async (id) => {
   const config = {
     method: "delete",
-    url: `http://localhost:8000/api/messages/${id}/`,
+    url: `https://rice-chat.herokuapp.com/api/messages/${id}/`,
     headers: {
       "Content-Type": "application/json",
     },
@@ -28,7 +28,7 @@ export const deleteMessage = async (id) => {
 export const deleteAChat = async (id) => {
   const config = {
     method: "delete",
-    url: `http://localhost:8000/api/chats/${id}/`,
+    url: `https://rice-chat.herokuapp.com/api/chats/${id}/`,
     headers: {
       "Content-Type": "application/json",
     },
@@ -40,7 +40,7 @@ export const deleteAChat = async (id) => {
 export const fetchAllChats = async () => {
   const config = {
     method: "get",
-    url: `http://localhost:8000/api/chats/`,
+    url: `https://rice-chat.herokuapp.com/api/chats/`,
     headers: {
       "Content-Type": "application/json",
     },
@@ -52,7 +52,7 @@ export const fetchAllChats = async () => {
 export const fetchUserChats = async (id) => {
   const config = {
     method: "get",
-    url: `http://localhost:8000/api/${id}/`,
+    url: `https://rice-chat.herokuapp.com/api/${id}/`,
     headers: {
       "Content-Type": "application/json",
     },
@@ -64,7 +64,7 @@ export const fetchUserChats = async (id) => {
 export const fetchChat = async (id) => {
   const config = {
     method: "get",
-    url: `http://localhost:8000/api/chats/${id}/`,
+    url: `https://rice-chat.herokuapp.com/api/chats/${id}/`,
     headers: {
       "Content-Type": "application/json",
     },
@@ -76,7 +76,7 @@ export const fetchChat = async (id) => {
 export const fetchAllMessages = async () => {
   const config = {
     method: "get",
-    url: `http://localhost:8000/api/messages/`,
+    url: `https://rice-chat.herokuapp.com/api/messages/`,
     headers: {
       "Content-Type": "application/json",
     },
@@ -92,7 +92,7 @@ export const postMessageToChat = async (data, id) => {
 export const createMessage = async (data) => {
   const config = {
     method: "post",
-    url: `http://localhost:8000/api/messages/`,
+    url: `https://rice-chat.herokuapp.com/api/messages/`,
     headers: {
       Authorization: `Bearer ${getToken()}`,
       "Content-Type": "application/json",
@@ -106,7 +106,7 @@ export const createMessage = async (data) => {
 export const createChat = async (id) => {
   const config = {
     method: "post",
-    url: `http://localhost:8000/api/${id}/chats/`,
+    url: `https://rice-chat.herokuapp.com/api/${id}/chats/`,
     headers: {
       Authorization: `Bearer ${getToken()}`,
       "Content-Type": "application/json",
@@ -119,7 +119,7 @@ export const createChat = async (id) => {
 export const updateChats = async (id, data) => {
   const config = {
     method: "post",
-    url: `http://localhost:8000/api/${id}/`,
+    url: `https://rice-chat.herokuapp.com/api/${id}/`,
     headers: {
       "Content-Type": "application/json",
     },
@@ -147,7 +147,7 @@ export const makeAxiosRequest = async (url, data) => {
 export const getAxiosRequestConfig = (requestUrl, data, method = "post") => {
   const config = {
     method,
-    url: `http://localhost:8000/api/${requestUrl}/`,
+    url: `https://rice-chat.herokuapp.com/api/${requestUrl}/`,
     headers: {
       "Content-Type": "application/json",
     },

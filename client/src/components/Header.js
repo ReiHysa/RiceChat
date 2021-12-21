@@ -8,6 +8,7 @@ const Header = () => {
   const logout = () => {
     removeToken();
     removeId();
+    console.log("REMOVED");
     navigate("/login");
   };
   return (
