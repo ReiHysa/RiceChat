@@ -14,6 +14,7 @@ const CreateChat = () => {
   useEffect(() => {
     if (allChats) {
       fetchAllChats().then(setAllChatsTwo);
+      console.log(allChats);
     }
   }, [allChats]);
   useEffect(() => {
@@ -35,11 +36,14 @@ const CreateChat = () => {
 
   useEffect(() => {
     if (otherChats && userChats) {
+      console.log(otherChats);
+      console.log(userChats);
     }
   }, [otherChats]);
 
   const handleFilter = async (event) => {
     const searchWord = event.target.value;
+    console.log(searchWord);
     setWordEntered(searchWord);
     fetchAllUsers().then((response) => {
       const filteredUsers = response.filter((data) => {
@@ -55,12 +59,14 @@ const CreateChat = () => {
 
   const handleClick = (event) => {
     const otherId = Number(event.target.id);
+    console.log(otherId);
     createChat(otherId);
     fetchAllChats().then(setAllChats);
   };
 
   function handleSubmit(event) {
     event.preventDefault();
+    console.log("submitted");
   }
 
   return (
