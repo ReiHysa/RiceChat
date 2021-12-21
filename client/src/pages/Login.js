@@ -18,10 +18,8 @@ const Login = ({ setIsLoggedIn }) => {
   useEffect(() => {
     const logCheck = () => {
       const token = getToken();
-      console.log(token);
       if (token !== null) {
         navigate("/home");
-        console.log("heyo");
       }
     };
     logCheck();
@@ -36,14 +34,12 @@ const Login = ({ setIsLoggedIn }) => {
   const handleSuccessfulLogin = (data) => {
     setToken(`Bearer ${data.token}`);
     setId(data.id);
-    console.log(getToken());
     setIsLoggedIn(true);
     navigate("/");
   };
 
   const handleError = (error) => {
     if (error.response) {
-      console.log(error);
       setIsError(true);
     }
   };

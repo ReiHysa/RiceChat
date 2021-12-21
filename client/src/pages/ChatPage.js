@@ -34,7 +34,6 @@ const ChatPage = () => {
     };
     const logCheck = () => {
       const token = getToken();
-      console.log(token);
       if (token === null) {
         navigate("/login");
       }
@@ -80,13 +79,10 @@ const ChatPage = () => {
         }
       }
     }
-    console.log(userMessages, "OWNER");
   }, [messages, check]);
 
   useEffect(() => {
     if (everyMessage) {
-      console.log(everyMessage, "every Message");
-
       setAllUserMessages([]);
 
       let i = 0;
@@ -123,7 +119,6 @@ const ChatPage = () => {
 
   const handleType = (event) => {
     const { name, value } = event.target;
-    console.log(name);
     setData({
       ...data,
       [name]: value,
