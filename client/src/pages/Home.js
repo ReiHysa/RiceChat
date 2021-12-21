@@ -21,7 +21,6 @@ const Home = () => {
         fetchAllChats().then(setAllChatsTwo);
 
         if (allChats.length !== allChatsTwo.length) {
-          console.log("reloaded");
           window.location.reload();
         }
       }, 2000);
@@ -30,14 +29,12 @@ const Home = () => {
 
   const fetchCommand = () => {
     fetchAllChats().then(setAllChats);
-    console.log(allChats, "yo");
     return;
   };
 
   useEffect(() => {
     const logCheck = () => {
       const token = getToken();
-      console.log(token);
       if (token === null) {
         navigate("/login");
       }
@@ -53,7 +50,6 @@ const Home = () => {
   useEffect(() => {
     if (allChats) {
       const userId = getId();
-      console.log(userId);
       fetchUserChats(Number(userId)).then(setUserChats);
     }
   }, [allChats]);
@@ -61,7 +57,6 @@ const Home = () => {
   useEffect(() => {
     if (userChats) {
       const res = allChats.filter((f) => userChats.includes(f.id));
-      console.log(chats, "this is chatt");
       setChats(res);
     }
   }, [userChats]);
